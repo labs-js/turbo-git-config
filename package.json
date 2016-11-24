@@ -1,6 +1,6 @@
 {
   "name": "turbo-git-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Config package for turbo-git",
   "main": "index.js",
   "scripts": {
