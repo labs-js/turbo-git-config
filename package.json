@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/labs-js/turbo-git-config/issues"
   },
-  "homepage": "https://github.com/labs-js/turbo-git-config#readme"
+  "homepage": "https://github.com/labs-js/turbo-git-config#readme",
+  "dependencies": {
+    "shelljs": "^0.7.5"
+  }
 }
