@@ -1,0 +1,28 @@
+{
+  "name": "turbo-git-config",
+  "version": "0.0.0",
+  "description": "Config package for turbo-git",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc jasmine-node --verbose --captureExceptions test"
+  },
+  "devDependencies": {
+    "console-mock": "^1.0.24",
+    "jasmine-node": "^1.14.5",
+    "nyc": "^8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labs-js/turbo-git-config.git"
+  },
+  "keywords": [
+    "turbo-git",
+    "config"
+  ],
+  "author": "Samuel Fabrizio <samuelfabrizio@gmail.com >",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/labs-js/turbo-git-config/issues"
+  },
+  "homepage": "https://github.com/labs-js/turbo-git-config#readme"
+}
