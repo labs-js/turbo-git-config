@@ -22,7 +22,7 @@
     "turbo-git",
     "config"
   ],
-  "author": "Samuel Fabrizio <samuelfabrizio@gmail.com >",
+  "author": "Samuel Fabrizio <samuelfabrizio@gmail.com>, Alan Campora <alan.campora@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/labs-js/turbo-git-config/issues"
