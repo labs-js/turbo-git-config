@@ -38,3 +38,6 @@ jspm_packages
 
 # ide files
 .idea
+
+#auto env
+.env
