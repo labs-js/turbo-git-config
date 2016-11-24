@@ -4,7 +4,8 @@
   "description": "Config package for turbo-git",
   "main": "index.js",
   "scripts": {
-    "test": "nyc jasmine-node --verbose --captureExceptions test"
+    "test": "nyc jasmine-node --verbose --captureExceptions test",
+    "test:watch": "npm test & onchange lib/*.js bin/*.js test/* -- npm test"
   },
   "devDependencies": {
     "console-mock": "^1.0.24",
@@ -30,6 +31,7 @@
   "homepage": "https://github.com/labs-js/turbo-git-config#readme",
   "dependencies": {
     "colors": "^1.1.2",
+    "onchange": "^3.0.2",
     "promise": "^7.1.1",
     "shelljs": "^0.7.5"
   }
