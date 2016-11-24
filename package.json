@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc jasmine-node --verbose --captureExceptions test",
-    "test:watch": "npm test & onchange lib/*.js bin/*.js test/* -- npm test"
+    "test:watch": "npm test & onchange lib/*.js bin/*.js test/* -- npm test",
+    "coverage": "nyc report --reporter=text-lcov > coverage.json"
   },
   "devDependencies": {
     "console-mock": "^1.0.24",
