@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/labs-js/turbo-git-config#readme",
   "dependencies": {
+    "colors": "^1.1.2",
     "promise": "^7.1.1",
     "shelljs": "^0.7.5"
   }
