@@ -1,0 +1,30 @@
+{
+    "turboLog": {
+        "gitLogCommandParams": "-n50 --reverse"
+    },
+    "turboCommit": {
+        "textAskComponent": "Insert the control/component which was the main subject of the change",
+        "textAskTag": "Select tag for your commit:",
+        "textAskTitle": "Insert commit title:",
+        "textAskDesc": "Type a commit description (leave it empty for omit):"
+    },
+    "commitConvention": {
+        "externalLink": "https://github.com/SAP/openui5/blob/master/docs/guidelines.md#commit-message",
+        "tagPrefix": "",
+        "tagSuffix": "",
+        "commitDesc": [{
+            "tag": "[FEATURE]",
+            "desc": "features commits",
+            "color": "green"
+        }, {
+            "tag": "[FIX]",
+            "desc": "bug fixing commits.",
+            "color": "yellow"
+        }, {
+            "tag": "[INTERNAL]",
+            "desc": "commits/explanations which should not be part of the change log.",
+            "color": "blue"
+        }]
+    },
+    "debug": false
+}
