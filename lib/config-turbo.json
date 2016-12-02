@@ -1,6 +1,6 @@
 {
     "turboLog": {
-        "gitLogCommand": "git log -n50 --reverse"
+        "gitLogCommandParams": "-n50 --reverse"
     },
     "turboCommit": {
         "textAskTag": "Select tag for your turbo-commit:",
