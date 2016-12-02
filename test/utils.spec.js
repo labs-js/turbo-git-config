@@ -25,6 +25,9 @@ describe('utils.js', function () {
         it('getGitRepoMainPath', function () {
             expect(utils.getGitRepoMainPath).toBeDefined();
         });
+        it('checkLocalConfigFile', function () {
+            expect(utils.checkLocalConfigFile).toBeDefined();
+        });
     });
     describe('behavior', function () {
         describe('showError', function () {
@@ -105,6 +108,30 @@ describe('utils.js', function () {
             it('should return a string path inside of git repo', function () {
                 helpers.gitInitInTempFolder();
                 expect(typeof utils.getGitRepoMainPath()).toBe('string');
+                helpers.finishTemp();
+            });
+        });
+        describe('checkLocalConfigFile', function () {
+            beforeEach(function () {
+                utils = require('./../lib/utils')();
+            });
+
+            it('should call shell test -f', function () {
+                spyOn(shell,'test').andCallThrough();
+                utils.checkLocalConfigFile();
+                expect(shell.test).toHaveBeenCalledWith('-f');
+            });
+
+            it('should return false without a .turbogit file', function () {
+                helpers.gitInitInTempFolder();
+                expect(utils.checkLocalConfigFile()).toBeFalsy();
+                helpers.finishTemp();
+            });
+
+            it('should return a path with a .turbogit file', function () {
+                helpers.gitInitInTempFolder();
+                shell.touch('.turbogit')
+                expect( typeof utils.checkLocalConfigFile()).toBe('string');
                 helpers.finishTemp();
             });
         });
