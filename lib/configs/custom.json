@@ -1,0 +1,25 @@
+{
+    "turboLog": {
+        "gitLogCommandParams": "-n50 --reverse"
+    },
+    "turboCommit": {
+        "textAskTag": "Select tag for your turbo-commit:",
+        "textAskComponent": "",
+        "textAskTitle": "Type commit title:",
+        "textAskDesc": "Commit description (leave it empty for omit):"
+    },
+    "commitConvention": {
+        "tagPrefix": "",
+        "tagSuffix": "",
+        "commitDesc": [{
+            "tag": "[Your tag]",
+            "desc": "desc of waht you tag means",
+            "color": "green"
+        }, {
+            "tag": "[Another tag]",
+            "desc": "desc of waht you tag means",
+            "color": "yellow"
+        }]
+    },
+    "debug": false
+}
