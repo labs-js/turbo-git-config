@@ -32,10 +32,7 @@ describe('utils.js', function () {
     describe('behavior', function () {
         describe('showError', function () {
             beforeEach( function () {
-                // consoleMock.enabled(true);
-                // consoleMock.historyClear();
                 spyOn(_console, 'log');
-                spyOn(childProcess, 'exec');
             });
 
             it('should return a undefined', function () {
@@ -102,6 +99,7 @@ describe('utils.js', function () {
             });
 
             it('should call process.exit(1) without repo', function () {
+                helpers.finishTemp();
                 utils.getGitRepoMainPath();
                 expect(helpers.mockProcess.exit).toHaveBeenCalledWith(1);
             });
@@ -112,14 +110,11 @@ describe('utils.js', function () {
             });
         });
         describe('checkLocalConfigFile', function () {
-            beforeEach(function () {
-                utils = require('./../lib/utils')();
-            });
 
-            it('should call shell test -f', function () {
-                spyOn(shell,'test').andCallThrough();
+            it('should call shell test', function () {
+                spyOn(shell,'test');
                 utils.checkLocalConfigFile();
-                expect(shell.test).toHaveBeenCalledWith('-f');
+                expect(shell.test).toHaveBeenCalled();
             });
 
             it('should return false without a .turbogit file', function () {
