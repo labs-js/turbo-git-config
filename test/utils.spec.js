@@ -110,7 +110,6 @@ describe('utils.js', function () {
             });
         });
         describe('checkLocalConfigFile', function () {
-
             it('should call shell test', function () {
                 spyOn(shell,'test');
                 utils.checkLocalConfigFile();
@@ -125,7 +124,7 @@ describe('utils.js', function () {
 
             it('should return a path with a .turbogit file', function () {
                 helpers.gitInitInTempFolder();
-                shell.touch('.turbogit')
+                shell.touch('.turbogit');
                 expect( typeof utils.checkLocalConfigFile()).toBe('string');
                 helpers.finishTemp();
             });
