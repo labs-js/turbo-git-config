@@ -35,10 +35,6 @@
             "tag": "[BRK]",
             "desc": "breaking changes commits, when we break old APIs.",
             "color": "magenta"
-        }, {
-            "tag": "[MRG]",
-            "desc": "merge commits.",
-            "color": "white"
         }]
     },
     "debug": false
