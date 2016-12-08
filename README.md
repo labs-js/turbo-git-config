@@ -19,12 +19,12 @@ npm install --save turbo-git-config
 And then from the code when you need use it: 
 
 ### Config Parser
-```
+```javascript
 var configParser = require('turbo-git-config').parser
 ```
 
 ### Utils
-```
+```javascript
 var utils = require('turbo-git-config').utils
 ```
 
