@@ -10,6 +10,9 @@
 
 #### This lib is part of the [Turbo Git](https://github.com/labs-js/turbo-git) -> Making your git even more awesome 😎🙌
 
+> Note: This package is in charge of get and parse the `.turbogit` config file on the corresponding git repo. If this config file is not on the repo this will use the default convention config. At the moment the default one is the [Turbo Commit Convention](https://github.com/labs-js/turbo-git/blob/master/CONVENTION.md)
+
+
 ## how to use it:
 
 ```
@@ -27,6 +30,7 @@ var configParser = require('turbo-git-config').parser
 ```javascript
 var utils = require('turbo-git-config').utils
 ```
+
 
 ### Config Parser Methods:
 
