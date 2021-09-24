@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/labs-js/turbo-git-config#readme",
   "dependencies": {
-    "colors": "^1.1.2",
-    "onchange": "^3.3.0",
-    "promise": "^8.0.1",
-    "shelljs": "^0.8.1"
+    "colors": "^1.4.0",
+    "onchange": "^7.1.0",
+    "promise": "^8.1.0",
+    "shelljs": "^0.8.4"
   }
 }
