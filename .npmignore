@@ -1,4 +1,5 @@
-test
+
 coverage
 coverage.json
-
+.nyc_output
+test
